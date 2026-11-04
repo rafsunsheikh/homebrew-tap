@@ -7,11 +7,12 @@
 class Pdfdown < Formula
   desc "Turn PDFs, especially research articles, into clean Markdown with figures and equations"
   homepage "https://github.com/rafsunsheikh/pdfdown"
-  url "https://files.pythonhosted.org/packages/source/p/pdfdown/pdfdown-0.1.2.tar.gz"
-  sha256 "1f4a98828320d8a192b373effd84fa308c531cb1bcd47a876bc0b306a8b2685a"
+  url "https://files.pythonhosted.org/packages/source/p/pdfdown/pdfdown-0.1.3.tar.gz"
+  sha256 "03e5390141be8c6a41af9f4bc5ed88c145270edafcb9370c2a139c65ddf5c4e1"
   license "MIT"
 
   depends_on "python@3.14"
+  depends_on "tesseract" # reads scanned Bangla books; pdfdown downloads the Bangla model itself
 
   def install
     python = Formula["python@3.14"].opt_bin/"python3.14"
