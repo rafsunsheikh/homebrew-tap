@@ -6,9 +6,9 @@
 #   curl -sL https://pypi.org/pypi/pdfdown/json | jq -r '.urls[] | select(.packagetype=="sdist") | .url, .digests.sha256'
 class Pdfdown < Formula
   desc "Turn PDFs, especially research articles, into clean Markdown with figures and equations"
-  homepage "https://github.com/rafsunsheikh/pdfdown"
-  url "https://files.pythonhosted.org/packages/source/p/pdfdown/pdfdown-0.1.3.tar.gz"
-  sha256 "03e5390141be8c6a41af9f4bc5ed88c145270edafcb9370c2a139c65ddf5c4e1"
+  homepage "https://rafsunsheikh.github.io/portfolio/portfolio-32/"
+  url "https://files.pythonhosted.org/packages/source/p/pdfdown/pdfdown-0.1.4.tar.gz"
+  sha256 "7857424a9e9a15c825dd40b83723ff0c2ddbc8cab7afa59446631ad7cf2ca191"
   license "MIT"
 
   depends_on "python@3.14"
